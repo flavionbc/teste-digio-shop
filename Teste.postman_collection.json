@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "279e2f00-8098-4b66-9994-22f04f30e181",
+		"name": "Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32891531"
+	},
+	"item": [
+		{
+			"name": "/COMPRAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/api/compras?page=0&size=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"compras"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/MAIOR-COMPRA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/api/compras/maior-compra/:ano",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"compras",
+						"maior-compra",
+						":ano"
+					],
+					"variable": [
+						{
+							"key": "ano",
+							"value": "2019"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/CLIENTE-FIEL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/api/compras/clientes-fieis",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"compras",
+						"clientes-fieis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/RECOMENDACAO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/api/recomendacao/cliente/tipo/:CPF",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"recomendacao",
+						"cliente",
+						"tipo",
+						":CPF"
+					],
+					"variable": [
+						{
+							"key": "CPF",
+							"value": "824643755772"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
